@@ -1,0 +1,1 @@
+var svg = document.getElementById('svg')

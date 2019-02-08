@@ -1,0 +1,96 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	height: 47px;
+}
+li{
+	display: inline-block;
+	padding: 0px 20px;
+	cursor: pointer;
+}
+button{
+	background-color: rgba(1,1,1,0);
+	border: none;
+	color: white;
+	padding: 15px;
+	font-size: 14px;
+	font-weight: lighter;
+	transition: 0.3s;
+	cursor: pointer;
+}
+button:hover{
+	color: rgb(170, 170, 170);
+	transition: 0.3s;
+}
+span{
+	font-size: 14px;
+}
+.nav-container{
+	width: 100%;
+	background-color: rgba(1,1,1,0.8);
+	color: white;
+}
+.responsive{
+	display: none;
+}
+@media only screen and (max-width: 768px) {
+	ul{
+		text-align: initial;
+		position: relative;	
+	}
+	li{
+		display: inline-block;
+		padding: 0px 5px;
+	}
+	.left-list{
+		display: none;
+	}
+	.responsive{
+		display: block;
+	}
+	.container{
+
+	}
+} 
+.container{
+	max-width: 900px;
+	margin: auto;
+}
+.sand-btn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 15px;
+}
+svg{
+	cursor: pointer;
+}
+.sand-btn:hover line{
+	stroke: rgb(170, 170, 170);
+	transition: 0.3s;
+}
+line{
+	stroke: rgb(255,255,255);
+	stroke-width: 2;
+	transition: 0.3s;
+}
+.center-btn{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -38px;
+}
+.right-btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
